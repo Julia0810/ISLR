@@ -1,0 +1,38 @@
+***************************ISLR NOTES***************************
+
+1. Introduction_________________________________________________
+
+27/434: table of datasets
+
+Save R dataframes as CSV:
+library(ISLR)
+write.csv(Carseats,"C:\\Users\\fred\\Documents\\julia\\ISLR\\Carseats.csv", row.names = TRUE)
+
+2. Statistical Learning_________________________________________
+
+37/434: interprebility / flexibility table
+
+Figure 2.9 - 2.11: Test MSE VS Train MSE & Variance VS Bias
+
+3. Linear Regression____________________________________________
+
+Validation with statistic indicators:
+F-statistic: relevant when p<<n. Good when f-statistic is large and associated p-value is small.
+Coefficient p-values: the smaller the p-value the better.
+R2: scale 0-1. R2 value of 1 means the model perfectly explains the variance in the response variable.
+RSE (residual standard errors): the larger the RSE the more noise
+
+Plots for model validation:
+Residual plot: if relation is linear supposed to follow a horizontal line
+Normal Q-Q: supposed to follow a straight line
+Scale location: if relation is linear supposed to follow a horizontal line
+Cook's distance: measures the effect of deleting a given observation (outlier or high leverage)
+
+Pour choisir parmi plusieurs variables:
+- faire une regression lineaire multiple
+- produire une matrice de correlation
+- choisir les vairables en fonction de p-values et mat de corr
+- jouer avec les * et + et tester les modeles
+
+
+SIGNET: page 123 (Applied #11)
